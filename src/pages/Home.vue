@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div
       class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
       style="font-family: Inter, 'Noto Sans', sans-serif"
@@ -69,7 +68,7 @@
             </div>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="flex flex-1 justify-center py-5">
           <div
             class="layout-content-container flex flex-col max-w-[960px] flex-1"
           >
@@ -89,7 +88,7 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Build your web presence with DevConnect
+                      Build your web presence with Augment Plus
                     </h1>
                     <h2
                       class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
@@ -195,7 +194,7 @@
                 <p
                   class="text-[#111117] text-base font-normal leading-normal max-w-[720px]"
                 >
-                  DevConnect provides a seamless experience for web developers,
+                  Augment Plus provides a seamless experience for web developers,
                   from domain registration to app hosting and community support.
                 </p>
               </div>
@@ -410,7 +409,7 @@
                   <p
                     class="text-[#111117] text-base font-normal leading-normal max-w-[720px"
                   >
-                    Join DevConnect today and start your web development
+                    Join Augment Plus today and start your web development
                     journey.
                   </p>
                 </div>
@@ -457,14 +456,13 @@
                 >
               </div>
               <p class="text-[#646487] text-base font-normal leading-normal">
-                © 2023 DevConnect. All rights reserved.
+                © 2023 Augment Plus. All rights reserved.
               </p>
             </footer>
           </div>
         </footer>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup>
