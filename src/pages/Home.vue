@@ -1,20 +1,16 @@
 <template>
   <div class="p-6 max-w-lg mx-auto">
-    <h3 class="text-2xl font-bold mb-4">Launch A Personal App For Your Profession</h3>
+    <h3 class="text-2xl font-bold mb-4">
+      Launch A Personal App For Your Profession
+    </h3>
     <p class="mb-4">
-      <select
-        v-model="selectedProfession"
-        class="border p-2 w-full rounded"
-      >
+      <select v-model="selectedProfession" class="border p-2 w-full rounded">
         <option value="">-- Select Profession --</option>
-        <option
-          v-for="service in services"
-          :key="service.ext"
-          v-for="type in service.types"
-          :value="type"
-        >
-          {{ type }}
-        </option>
+        <template v-for="service in services" :key="service.ext">
+          <option v-for="type in service.types" :key="type" :value="type">
+            {{ type }}
+          </option>
+        </template>
       </select>
     </p>
 
@@ -48,7 +44,11 @@ const services = reactive([
   { types: ["Nonprofit", "Charity"], ext: ".org", price: 40 },
   { types: ["Real Estate Agent", "Broker"], ext: ".realty", price: 45 },
   { types: ["Health & Wellness", "Therapist"], ext: ".health", price: 50 },
-  { types: ["Perfumes", "Wines & Alcoholic Beverages", "Hairs"], ext: ".store", price: 50 },
+  {
+    types: ["Perfumes", "Wines & Alcoholic Beverages", "Hairs"],
+    ext: ".store",
+    price: 50,
+  },
   { types: ["Electronics", "Clothing", "Provision"], ext: ".shop", price: 55 },
   { types: ["Travel", "Tourism"], ext: ".travel", price: 60 },
   { types: ["Food & Beverage", "Restaurant"], ext: ".food", price: 65 },
@@ -62,6 +62,8 @@ const selectedProfession = ref("");
 
 const selectedDomain = computed(() => {
   if (!selectedProfession.value) return null;
-  return services.find(service => service.types.includes(selectedProfession.value));
+  return services.find((service) =>
+    service.types.includes(selectedProfession.value)
+  );
 });
 </script>

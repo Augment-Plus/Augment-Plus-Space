@@ -1,5 +1,4 @@
 <template>
-  <div>You are viewing {{ hostname }}</div>
   <router-view></router-view>
 </template>
 
