@@ -5,7 +5,7 @@
   >
     <div class="layout-container flex h-full grow flex-col">
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f0f4] px-10 py-3"
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f0f4] px-10 py-4"
       >
         <div class="flex items-center gap-4 text-[#111117]">
           <div class="size-4">
@@ -26,49 +26,8 @@
             Augment Plus
           </h2>
         </div>
-        <div class="flex flex-1 justify-end gap-8">
-          <div class="flex items-center gap-9">
-            <a
-              class="text-[#111117] text-sm font-medium leading-normal"
-              href="#"
-              >Home</a
-            >
-            <a
-              class="text-[#111117] text-sm font-medium leading-normal"
-              href="#"
-              >Domains</a
-            >
-            <a
-              class="text-[#111117] text-sm font-medium leading-normal"
-              href="#"
-              >Hosting</a
-            >
-            <a
-              class="text-[#111117] text-sm font-medium leading-normal"
-              href="#"
-              >Community</a
-            >
-            <a
-              class="text-[#111117] text-sm font-medium leading-normal"
-              href="#"
-              >Docs</a
-            >
-          </div>
-          <div class="flex gap-2">
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#6b6deb] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Get Started</span>
-            </button>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f0f4] text-[#111117] text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Log In</span>
-            </button>
-          </div>
-        </div>
       </header>
-      <div class="flex flex-1 justify-center py-5">
+      <div class="flex flex-1 justify-center">
         <div
           class="layout-content-container flex flex-col max-w-[960px] flex-1"
         >
