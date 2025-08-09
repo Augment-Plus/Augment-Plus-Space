@@ -15,6 +15,16 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/register/domain",
+    name: "register-domain",
+    component: () => import("../pages/Register/Domain.vue"),
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "404",
+    component: () => import("../pages/404.vue"),
+  },
 ];
 
 export default routes;
